@@ -3,6 +3,8 @@ import * as cheerio from 'cheerio';
 import { randomUUID } from 'crypto';
 import path from 'path';
 import { readFile } from 'fs/promises';
+
+export const dynamic = 'force-dynamic';
 import {
   createId,
   paths,

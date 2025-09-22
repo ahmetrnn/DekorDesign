@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import path from 'path';
 import { createId, paths, saveBuffer, publicUrlFromPath } from '../../dekor/lib/fs';
 import type { ApiResponse, RoomAnalysisResult } from '../../dekor/lib/types';
+
+export const dynamic = 'force-dynamic';
 import { fallbackRoomAnalysis } from '../../dekor/lib/openai';
 
 export async function POST(request: NextRequest) {

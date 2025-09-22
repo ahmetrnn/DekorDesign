@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+
+export const dynamic = 'force-dynamic';
 import path from 'path';
 import { createId, ensureDir, paths, publicUrlFromPath, saveBuffer, sanitizeFilename } from '../../dekor/lib/fs';
 import type { ApiResponse } from '../../dekor/lib/types';

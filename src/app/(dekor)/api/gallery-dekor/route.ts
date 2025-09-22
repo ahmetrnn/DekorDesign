@@ -3,6 +3,8 @@ import path from 'path';
 import { listFiles, paths, readJson } from '../../dekor/lib/fs';
 import type { ApiResponse, GalleryItem, StageMetadata } from '../../dekor/lib/types';
 
+export const dynamic = 'force-dynamic';
+
 export async function GET(request: NextRequest) {
   try {
     const url = new URL(request.url);
