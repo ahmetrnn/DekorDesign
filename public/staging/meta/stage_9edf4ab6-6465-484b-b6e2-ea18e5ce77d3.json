@@ -1,0 +1,12 @@
+{
+  "id": "stage_9edf4ab6-6465-484b-b6e2-ea18e5ce77d3",
+  "createdAt": "2025-09-17T20:31:08.158Z",
+  "productIds": [
+    "product_163da294-e1a5-4cef-ba89-7700f0077829"
+  ],
+  "roomImagePath": "/staging/rooms/room_4af02cf9-cfef-49fd-80ed-560c6db3012b.avif",
+  "outputImagePath": "/staging/staged/staged_e7be9bff-37eb-4415-a4b6-63c09f238612.png",
+  "prompt": "Place the selected furniture into the uploaded room photo.\nEnsure photorealism, correct perspective, natural shadows, and smooth blending with room brightness and colors.\nRoom style: contemporary. Dominant wall color: #F7F4EA. Floor color: #EBD9D1. Average brightness: 0.60.\nProduct 1: SLATORP vissle sarı-yeşil 2'li kanepe - 20594364 | IKEA",
+  "generator": "sharp-fallback",
+  "confidence": 0.6
+}

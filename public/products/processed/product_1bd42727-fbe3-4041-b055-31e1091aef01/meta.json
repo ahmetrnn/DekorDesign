@@ -1,0 +1,15 @@
+{
+  "id": "product_1bd42727-fbe3-4041-b055-31e1091aef01",
+  "source": "upload",
+  "title": "1_org_zoom (1).webp",
+  "createdAt": "2025-09-19T14:22:33.382Z",
+  "images": [
+    {
+      "id": "618cee86-a6f0-424e-8fa8-d445585a98cb",
+      "originalPath": "/products/original/product_1bd42727-fbe3-4041-b055-31e1091aef01/618cee86-a6f0-424e-8fa8-d445585a98cb-1_org_zoom__1_.webp",
+      "processedPath": "/products/processed/product_1bd42727-fbe3-4041-b055-31e1091aef01/618cee86-a6f0-424e-8fa8-d445585a98cb.png",
+      "backgroundRemoved": true,
+      "confidence": 0.8
+    }
+  ]
+}

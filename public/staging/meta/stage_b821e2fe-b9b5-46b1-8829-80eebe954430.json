@@ -1,0 +1,12 @@
+{
+  "id": "stage_b821e2fe-b9b5-46b1-8829-80eebe954430",
+  "createdAt": "2025-09-19T14:23:02.034Z",
+  "productIds": [
+    "product_1bd42727-fbe3-4041-b055-31e1091aef01"
+  ],
+  "roomImagePath": "/staging/rooms/room_8c6e6749-21ec-43ed-9b63-0554819e4a74.avif",
+  "outputImagePath": "/staging/staged/staged_f75fb6b0-b433-4b60-b747-03120d68cd46.png",
+  "prompt": "Place the Uploaded Product realistically in the room do not make any changes on the product. Natural daylight with accurate shadows. Photorealistic, correct perspective, proper occlusion if needed, clean blending.",
+  "generator": "fal",
+  "confidence": 0.9
+}

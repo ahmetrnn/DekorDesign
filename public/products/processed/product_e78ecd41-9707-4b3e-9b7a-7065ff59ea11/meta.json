@@ -1,0 +1,38 @@
+{
+  "id": "product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11",
+  "source": "url",
+  "sourceUrl": "https://www.ikea.com.tr/urun/slatorp-vissle-sari-yesil-2-li-kanepe-20594364",
+  "title": "SLATORP vissle sarı-yeşil 2'li kanepe - 20594364 | IKEA",
+  "price": "",
+  "createdAt": "2025-09-18T18:17:07.321Z",
+  "images": [
+    {
+      "id": "7f740561-525c-462b-8b7d-848d4c023a55",
+      "originalPath": "/products/original/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/7f740561-525c-462b-8b7d-848d4c023a55.jpg",
+      "processedPath": "/products/processed/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/7f740561-525c-462b-8b7d-848d4c023a55.png",
+      "backgroundRemoved": true,
+      "confidence": 0.85
+    },
+    {
+      "id": "8fdc0439-4f03-402d-8a94-bf557bcf9ca1",
+      "originalPath": "/products/original/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/8fdc0439-4f03-402d-8a94-bf557bcf9ca1.svg",
+      "processedPath": "/products/processed/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/8fdc0439-4f03-402d-8a94-bf557bcf9ca1.png",
+      "backgroundRemoved": true,
+      "confidence": 0.85
+    },
+    {
+      "id": "dcf559f1-c848-4999-879e-ffb209d00105",
+      "originalPath": "/products/original/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/dcf559f1-c848-4999-879e-ffb209d00105.jpg",
+      "processedPath": "/products/processed/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/dcf559f1-c848-4999-879e-ffb209d00105.png",
+      "backgroundRemoved": true,
+      "confidence": 0.85
+    },
+    {
+      "id": "b8c0d100-501a-430d-bb06-9231afb0a803",
+      "originalPath": "/products/original/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/b8c0d100-501a-430d-bb06-9231afb0a803.jpg",
+      "processedPath": "/products/processed/product_e78ecd41-9707-4b3e-9b7a-7065ff59ea11/b8c0d100-501a-430d-bb06-9231afb0a803.png",
+      "backgroundRemoved": true,
+      "confidence": 0.85
+    }
+  ]
+}

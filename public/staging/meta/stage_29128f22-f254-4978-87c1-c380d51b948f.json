@@ -1,0 +1,12 @@
+{
+  "id": "stage_29128f22-f254-4978-87c1-c380d51b948f",
+  "createdAt": "2025-09-17T20:39:57.921Z",
+  "productIds": [
+    "product_2b721de3-9387-4f0d-b6f2-aebb25c6adb9"
+  ],
+  "roomImagePath": "/staging/rooms/room_3bf5076b-360b-4045-bb4f-ee2496e59e47.avif",
+  "outputImagePath": "/staging/staged/staged_dfddcc7f-d8dc-4ad8-a772-2aae92b6602d.png",
+  "prompt": "Replace the existing furniture in the input room image with the target furniture shown in the reference image. Keep the room's walls, floor, lighting, windows, and overall environment unchanged. Ensure the new furniture looks naturally placed, with correct scale, perspective, and alignment. Match shadows, reflections, and lighting so the furniture appears realistic and consistent with the room's style. Do not alter the architecture, colors of the room, or other decor — only replace the specified furniture.\nRoom style: contemporary. Dominant wall color: #F7F4EA. Floor color: #EBD9D1. Average brightness: 0.60.\nProduct 1: SLATORP vissle sarı-yeşil 2'li kanepe - 20594364 | IKEA",
+  "generator": "fal",
+  "confidence": 0.9
+}
