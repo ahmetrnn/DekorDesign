@@ -79,3 +79,8 @@ dist
 # Temporary folders
 tmp/
 temp/
+
+# Large asset directories (should be managed separately)
+public/products/
+public/staging/
+public/videos/
