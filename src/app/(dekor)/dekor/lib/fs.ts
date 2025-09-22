@@ -32,7 +32,7 @@ export async function saveBuffer(filePath: string, data: ArrayBuffer | Buffer) {
   if (data instanceof Buffer) {
     buffer = data;
   } else {
-    buffer = Buffer.from(data);
+    buffer = Buffer.from(new Uint8Array(data));
   }
   await writeFile(filePath, buffer);
   return filePath;

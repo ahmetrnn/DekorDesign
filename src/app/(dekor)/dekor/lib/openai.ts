@@ -28,44 +28,21 @@ export async function analyzeRoomImage(imageBase64: string): Promise<RoomAnalysi
         role: 'user',
         content: [
           {
-            type: 'text',
+            type: 'input_text',
             text: 'Analyze this room photo and return JSON with wallColor, floorColor, palette (array of 3 hex colors), brightness (0-1), and style description.'
           },
-          { type: 'image', image_base64: imageBase64 }
+          { type: 'input_image', image_base64: imageBase64 } as any
         ]
       }
-    ],
-    response_format: {
-      type: 'json_schema',
-      json_schema: {
-        name: 'room_analysis',
-        schema: {
-          type: 'object',
-          properties: {
-            wallColor: { type: 'string' },
-            floorColor: { type: 'string' },
-            palette: {
-              type: 'array',
-              items: { type: 'string' },
-              minItems: 3,
-              maxItems: 5
-            },
-            brightness: { type: 'number' },
-            style: { type: 'string' }
-          },
-          required: ['wallColor', 'floorColor', 'palette', 'brightness', 'style'],
-          additionalProperties: false
-        }
-      }
-    }
+    ]
   });
 
-  const json = response.output?.[0]?.content?.[0];
-  if (!json || json.type !== 'json_schema') {
+  const content = (response.output?.[0] as any)?.content?.[0];
+  if (!content || content.type !== 'text') {
     throw new Error('Failed to parse room analysis response.');
   }
 
-  const payload = json.parsed as RoomAnalysisResult;
+  const payload = JSON.parse(content.text) as RoomAnalysisResult;
   const fallback = fallbackRoomAnalysis();
   return {
     wallColor: payload.wallColor ?? fallback.wallColor,

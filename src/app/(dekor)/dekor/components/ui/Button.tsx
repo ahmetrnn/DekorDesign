@@ -17,8 +17,6 @@ const variantStyles: Record<ButtonVariant, string> = {
     'bg-transparent text-[var(--text)] border border-[var(--border)] hover:bg-[var(--bg-soft)] focus-visible:outline-[var(--accent)]'
 };
 
-const MotionButton = motion.button;
-
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant = 'primary', className = '', children, loading, disabled, ...props }, ref) => {
     const baseClasses = [
@@ -32,14 +30,14 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       .join(' ');
 
     return (
-      <MotionButton
+      <motion.button
         ref={ref}
         whileHover={{ scale: disabled ? 1 : 1.03 }}
         whileTap={{ scale: disabled ? 1 : 0.98 }}
         className={baseClasses}
         disabled={disabled || loading}
         aria-busy={loading}
-        {...props}
+        {...(props as any)}
       >
         {loading && (
           <span
@@ -48,7 +46,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           />
         )}
         {children}
-      </MotionButton>
+      </motion.button>
     );
   }
 );
