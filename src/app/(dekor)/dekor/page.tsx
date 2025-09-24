@@ -63,8 +63,9 @@ export default function DekorGeneratePage() {
   const objectUrlsRef = useRef<string[]>([]);
 
   useEffect(() => {
+    const urlsAtMount = objectUrlsRef.current;
     return () => {
-      objectUrlsRef.current.forEach((url) => URL.revokeObjectURL(url));
+      urlsAtMount.forEach((url) => URL.revokeObjectURL(url));
     };
   }, []);
 
@@ -487,7 +488,7 @@ export default function DekorGeneratePage() {
             </p>
 
             <div className="mt-4">
-              <p className="text-sm font-medium text-slate-300 mb-2">Örnek Prompt'lar</p>
+              <p className="text-sm font-medium text-slate-300 mb-2">Örnek Prompt&apos;lar</p>
               <div className="flex flex-wrap gap-2">
                 {examplePrompts.map((prompt, index) => (
                   <button
@@ -543,7 +544,7 @@ export default function DekorGeneratePage() {
 
               <div className="flex flex-col">
                 <label htmlFor="background-prompt-textarea" className="block text-sm font-medium text-slate-300 mb-2">
-                  Arka Plan Prompt'u
+                  Arka Plan Prompt&apos;u
                 </label>
                 <textarea
                   id="background-prompt-textarea"
