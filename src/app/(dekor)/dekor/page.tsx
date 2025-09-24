@@ -303,9 +303,16 @@ export default function DekorGeneratePage() {
         const reader = new FileReader();
         reader.onloadend = () => {
           if (reader.result instanceof ArrayBuffer) {
-            const base64 = btoa(
-              String.fromCharCode(...new Uint8Array(reader.result))
-            );
+            const bytes = new Uint8Array(reader.result);
+            let binary = '';
+            const chunkSize = 8192; // Process in chunks to avoid stack overflow
+            
+            for (let i = 0; i < bytes.length; i += chunkSize) {
+              const chunk = bytes.subarray(i, i + chunkSize);
+              binary += String.fromCharCode.apply(null, Array.from(chunk));
+            }
+            
+            const base64 = btoa(binary);
             resolve(base64);
           } else {
             reject(new Error("Failed to convert blob to base64."));
